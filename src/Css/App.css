@@ -1,0 +1,20 @@
+/* google fonts cdn */
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Roboto:wght@500&display=swap");
+
+/* google fonts */
+/* font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* main section */
+.main__section {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}

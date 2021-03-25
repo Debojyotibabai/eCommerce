@@ -1,0 +1,44 @@
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+
+/* logo */
+.navbar > .logo {
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #000;
+  font-weight: bold;
+}
+
+/* navlinks */
+.navbar > ul {
+  display: flex;
+  list-style: none;
+}
+.navbar > ul > li {
+  margin: 0 35px;
+}
+.navbar > ul > li > .navlink,
+.navbar > .cart {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #808080;
+  transition: 0.3s;
+}
+.navbar > ul > li > .navlink:hover {
+  color: #000;
+}
+.navbar > ul > li > .active__navlink {
+  color: #000;
+}
+
+/* cart */
+.navbar > .cart {
+  color: #000;
+  font-weight: bold;
+}

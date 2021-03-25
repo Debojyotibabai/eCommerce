@@ -1,0 +1,84 @@
+/* banner section */
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+/* left banner */
+.banner > .left__banner {
+  width: 55%;
+}
+.banner > .left__banner > img {
+  width: 100%;
+}
+.banner > .left__banner > p {
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+/* right banner */
+.banner > .right__banner {
+  width: 30%;
+}
+.banner > .right__banner > img {
+  width: 100%;
+  height: 400px;
+}
+.banner > .right__banner > p {
+  color: #666666;
+  font-weight: normal;
+  margin: 25px 0 50px;
+  line-height: 1.5;
+}
+.banner > .right__banner > .banner__button {
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid;
+  transition: 0.3s;
+}
+.banner > .right__banner > .banner__button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* product section */
+.product {
+  margin-top: 100px;
+}
+.product > h1 {
+  font-weight: bold;
+  font-size: 2.7rem;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.product > p {
+  color: #666666;
+  margin: 20px 0 80px;
+}
+.product > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* thoughts section */
+.thoughts {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  margin-top: 220px;
+  line-height: 1.7;
+  margin-bottom: 200px;
+}
+.thoughts > span {
+  font-size: 5rem;
+  line-height: 0;
+  color: #bbbbbb;
+}
