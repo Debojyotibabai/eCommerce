@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// axios
+import axios from "axios";
+
+// material icon
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+
 // component
 import ProductCard from "./ProductCard";
+import NewsCard from "./NewsCard";
 
 // css
 import "../Css/App.css";
@@ -42,13 +51,30 @@ const Home = () => {
     },
   ]);
 
+  // news section data
+  const [newsData, setNewsData] = useState([]);
+
+  // news section data fetch
+  useEffect(() => {
+    axios
+      .get(
+        "https://api.nytimes.com/svc/topstories/v2/fashion.json?api-key=3ejR0h7hGF0in8X71O6RtW5psJgYxfjL"
+      )
+      .then((response) => {
+        setNewsData(response.data.results.slice(0, 3));
+      });
+  }, []);
+
+  // news letter input value
+  const [inputValue, setInputValue] = useState("");
+
   return (
     <>
       {/* main section */}
       <div className="main__section">
         {/* banner section */}
         <div className="banner">
-          {/* left side */}
+          {/* left banner */}
           <div className="left__banner" data-aos="fade-right">
             <p>A Cosmetic Heaven</p>
             <img
@@ -57,7 +83,7 @@ const Home = () => {
             />
           </div>
 
-          {/* right side */}
+          {/* right banner */}
           <div className="right__banner" data-aos="fade-left">
             <img
               src="https://images.unsplash.com/photo-1560129986-baba295cf72c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29zbWV0aWN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -104,7 +130,69 @@ const Home = () => {
           trees, the birds, the clouds - even those we love. Because we see
           things so often, we see them less and less.
         </p>
+
+        {/* news section */}
+        <div className="news">
+          <h1>The Press</h1>
+          <p>Top fashion news from all over the world.</p>
+          <div>
+            {newsData.map((eachNews, eachNewsIndex) => {
+              return (
+                <NewsCard
+                  key={eachNewsIndex}
+                  link={eachNews.url}
+                  img={eachNews.multimedia[0].url}
+                  type={eachNews.section}
+                  heading={eachNews.title}
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        {/* news letter section */}
+        <div className="news__letter">
+          {/* left news letter*/}
+          <div className="left__news__letter">
+            <a href="https://www.linkedin.com/in/debojyoti-ghosh-7003671a4/">
+              LinkedIn
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100008004977942">
+              Facebook
+            </a>
+          </div>
+
+          {/* right news letter*/}
+          <div className="right__news__letter">
+            <h1>
+              Subscribe to our news letter for latest news, deals and more.
+            </h1>
+            <div>
+              <input
+                type="text"
+                value={inputValue}
+                onChange={(e) => {
+                  setInputValue(e.target.value);
+                }}
+              />
+              <button
+                data-aos="fade-right"
+                onClick={() => {
+                  inputValue !== ""
+                    ? alert("Subscribed successfully")
+                    : alert("Please enter your email address");
+                  setInputValue("");
+                }}
+              >
+                <ArrowRightAltIcon fontSize="large" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* footer */}
+      <p className="footer">CopyRight © 2021 eBeauty.</p>
     </>
   );
 };

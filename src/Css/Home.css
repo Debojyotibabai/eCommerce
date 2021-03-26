@@ -12,6 +12,7 @@
 }
 .banner > .left__banner > img {
   width: 100%;
+  filter: grayscale(100%);
 }
 .banner > .left__banner > p {
   font-weight: bold;
@@ -60,24 +61,110 @@
 }
 .product > div {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 /* thoughts section */
 .thoughts {
   text-align: center;
-  width: 50%;
+  width: 60%;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
   margin-top: 220px;
   line-height: 1.8;
-  margin-bottom: 200px;
 }
 .thoughts > span {
   font-size: 5rem;
   line-height: 0;
   color: #bbbbbb;
+}
+
+/* news section */
+.news {
+  text-align: center;
+  margin-top: 160px;
+  padding: 50px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+}
+.news > h1 {
+  font-weight: bold;
+  font-size: 2.7rem;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.news > p {
+  color: #666666;
+  margin: 20px 0 0;
+}
+.news > div {
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+/* news letter section */
+.news__letter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 170px;
+  border-top: 2px #e9e9e9 solid;
+  border-bottom: 2px #e9e9e9 solid;
+  padding: 90px 0;
+}
+
+/* left news letter */
+.news__letter > .left__news__letter > a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.5;
+  margin-right: 80px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+.news__letter > .left__news__letter > a:hover {
+  opacity: 1;
+}
+
+/* right news letter */
+.news__letter > .right__news__letter {
+  width: 40%;
+}
+.news__letter > .right__news__letter > h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  margin-bottom: 40px;
+}
+.news__letter > .right__news__letter > div {
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 90%;
+}
+.news__letter > .right__news__letter > div > input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1.2rem;
+  color: #666666;
+}
+.news__letter > .right__news__letter > div > button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  word-spacing: 3px;
 }

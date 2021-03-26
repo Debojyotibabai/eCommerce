@@ -1,0 +1,22 @@
+.news__card {
+  width: 22%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.news__card > img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.news__card:hover > img {
+  filter: none;
+}
+.news__card > p {
+  color: #aaaaaa;
+  margin: 10px 0 15px;
+  font-size: 0.9rem;
+}
+.news__card > h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.3rem;
+  color: #000;
+}
