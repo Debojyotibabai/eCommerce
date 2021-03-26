@@ -64,10 +64,10 @@ const Home = () => {
               alt=""
             />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              vel rerum laboriosam aliquid ullam inventore totam recusandae
-              tempore, nostrum fugiat perspiciatis dolores? Velit dolores
-              doloribus dolorem, accusamus assumenda ipsa ipsum.
+              The beauty of a woman is not in a facial mode but the true beauty
+              in a woman is reflected in her soul. It is the caring that she
+              lovingly gives the passion that she shows. The beauty of a woman
+              grows with the passing years.
             </p>
             <NavLink className="banner__button" to="/cosmetics">
               SHOP NOW
@@ -98,11 +98,11 @@ const Home = () => {
         {/* thoughts section */}
         <p className="thoughts" data-aos="fade-up">
           <span>"</span>
-          Beauty is in the skin! Take care of it, oil it, clean it, scrub it,
-          perfume it, and put on your best clothes, even if there is no special
-          occasion, and you'll feel like a queen. If society is hard on you,
-          fight back by pampering your skin. Skin is political. Otherwise why
-          would the imams order us to hide it?
+          The more often we see the things around us - even the beautiful and
+          wonderful things - the more they become invisible to us. That is why
+          we often take for granted the beauty of this world: the flowers, the
+          trees, the birds, the clouds - even those we love. Because we see
+          things so often, we see them less and less.
         </p>
       </div>
     </>

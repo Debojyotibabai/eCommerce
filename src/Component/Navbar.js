@@ -33,7 +33,7 @@ const Navbar = () => {
             className="navlink"
             activeClassName="active__navlink"
           >
-            COSMETICS
+            PRODUCTS
           </NavLink>
         </li>
         <li>
