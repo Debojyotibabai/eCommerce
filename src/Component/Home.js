@@ -9,8 +9,6 @@ import "aos/dist/aos.css";
 import axios from "axios";
 
 // material icon
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 // component
