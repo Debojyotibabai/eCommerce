@@ -158,6 +158,7 @@ const Home = () => {
             <a href="https://www.facebook.com/profile.php?id=100008004977942">
               Facebook
             </a>
+            <a href="https://www.instagram.com/debojyoti.ghosh98/">Instagram</a>
           </div>
 
           {/* right news letter*/}
