@@ -191,7 +191,7 @@ const Home = () => {
       </div>
 
       {/* footer */}
-      <p className="footer">CopyRight © 2021 eBeauty.</p>
+      <p className="footer">CopyRight © 2021 eBeauty...</p>
     </>
   );
 };
