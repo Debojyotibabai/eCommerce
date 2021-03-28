@@ -166,7 +166,15 @@ const Home = () => {
             <h1>
               Subscribe to our news letter for latest news, deals and more.
             </h1>
-            <div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                inputValue !== ""
+                  ? alert("Subscribed successfully")
+                  : alert("Please enter your email address");
+                setInputValue("");
+              }}
+            >
               <input
                 type="email"
                 value={inputValue}
@@ -174,18 +182,10 @@ const Home = () => {
                   setInputValue(e.target.value);
                 }}
               />
-              <button
-                data-aos="fade-right"
-                onClick={() => {
-                  inputValue !== ""
-                    ? alert("Subscribed successfully")
-                    : alert("Please enter your email address");
-                  setInputValue("");
-                }}
-              >
+              <button data-aos="fade-right" type="submit">
                 <ArrowRightAltIcon fontSize="large" />
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

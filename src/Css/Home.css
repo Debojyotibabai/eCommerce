@@ -138,7 +138,7 @@
   font-family: "Frank Ruhl Libre", serif;
   margin-bottom: 40px;
 }
-.news__letter > .right__news__letter > div {
+.news__letter > .right__news__letter > form {
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
@@ -146,14 +146,14 @@
   padding: 15px 0;
   width: 90%;
 }
-.news__letter > .right__news__letter > div > input {
+.news__letter > .right__news__letter > form > input {
   border: none;
   outline: none;
   flex: 1;
   font-size: 1.2rem;
   color: #666666;
 }
-.news__letter > .right__news__letter > div > button {
+.news__letter > .right__news__letter > form > button {
   border: none;
   outline: none;
   background: none;
