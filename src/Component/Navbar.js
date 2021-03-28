@@ -46,16 +46,6 @@ const Navbar = () => {
             CONTACT
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            exact
-            to="/blog"
-            className="navlink"
-            activeClassName="active__navlink"
-          >
-            BLOG
-          </NavLink>
-        </li>
       </ul>
 
       {/* cart */}

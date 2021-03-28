@@ -70,8 +70,8 @@ const Home = () => {
     <>
       {/* main section */}
       <div className="main__section">
-        {/* banner section */}
-        <div className="banner">
+        {/* home banner section */}
+        <div className="home__banner">
           {/* left banner */}
           <div className="left__banner" data-aos="fade-right">
             <p>A Cosmetic Heaven</p>
@@ -168,7 +168,7 @@ const Home = () => {
             </h1>
             <div>
               <input
-                type="text"
+                type="email"
                 value={inputValue}
                 onChange={(e) => {
                   setInputValue(e.target.value);

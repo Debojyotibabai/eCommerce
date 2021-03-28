@@ -1,0 +1,75 @@
+/* contact header */
+.contact__header {
+  margin: 100px 0 80px;
+}
+.contact__header > h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.3rem;
+  margin-bottom: 15px;
+}
+.contact__header > p {
+  color: #666666;
+  font-size: 1.2rem;
+}
+
+/* contact section */
+.contact__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+/* left contact section */
+.contact__section > .left__contact__section {
+  width: 40%;
+}
+.contact__section > .left__contact__section > h1 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.contact__section > .left__contact__section > p {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 70px;
+}
+
+/* right contact section */
+.contact__section > .right__contact__section {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__section > .right__contact__section > input,
+.contact__section > .right__contact__section > textarea,
+.contact__section > .right__contact__section > button {
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid;
+}
+.contact__section > .right__contact__section > textarea {
+  resize: vertical;
+}
+.contact__section > .right__contact__section > input::placeholder,
+.contact__section > .right__contact__section > textarea::placeholder {
+  font-family: "Frank Ruhl Libre", serif;
+}
+.contact__section > .right__contact__section > button {
+  border: none;
+  background-color: #fff;
+  border: 1px solid;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact__section > .right__contact__section > button:hover {
+  background-color: #000;
+  color: #fff;
+}

@@ -18,3 +18,12 @@ font-family: 'Roboto', sans-serif; */
   width: 100%;
   margin: auto;
 }
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  word-spacing: 3px;
+}

@@ -1,5 +1,5 @@
-/* banner section */
-.banner {
+/* home banner section */
+.home__banner {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -7,14 +7,14 @@
 }
 
 /* left banner */
-.banner > .left__banner {
+.home__banner > .left__banner {
   width: 55%;
 }
-.banner > .left__banner > img {
+.home__banner > .left__banner > img {
   width: 100%;
   filter: grayscale(100%);
 }
-.banner > .left__banner > p {
+.home__banner > .left__banner > p {
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
   font-size: 5rem;
@@ -22,26 +22,26 @@
 }
 
 /* right banner */
-.banner > .right__banner {
+.home__banner > .right__banner {
   width: 30%;
 }
-.banner > .right__banner > img {
+.home__banner > .right__banner > img {
   width: 100%;
 }
-.banner > .right__banner > p {
+.home__banner > .right__banner > p {
   color: #666666;
   font-weight: normal;
   margin: 25px 0 50px;
   line-height: 1.5;
 }
-.banner > .right__banner > .banner__button {
+.home__banner > .right__banner > .banner__button {
   padding: 12px 30px;
   text-decoration: none;
   color: #000;
   border: 1px solid;
   transition: 0.3s;
 }
-.banner > .right__banner > .banner__button:hover {
+.home__banner > .right__banner > .banner__button:hover {
   color: #fff;
   background-color: #000;
 }
@@ -158,13 +158,4 @@
   outline: none;
   background: none;
   cursor: pointer;
-}
-
-/* footer */
-.footer {
-  width: 100%;
-  padding: 50px;
-  text-align: center;
-  font-size: 0.9rem;
-  word-spacing: 3px;
 }
