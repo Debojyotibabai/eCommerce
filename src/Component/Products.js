@@ -11,6 +11,7 @@ import axios from "axios";
 import ProductCard from "./ProductCard";
 
 // css
+import "../Css/App.css";
 import "../Css/Products.css";
 
 const Products = () => {
@@ -59,6 +60,7 @@ const Products = () => {
                   img={eachCosmeticsData.image_link}
                   type={eachCosmeticsData.product_type}
                   name={eachCosmeticsData.name}
+                  description={eachCosmeticsData.description}
                   price={eachCosmeticsData.price}
                 />
               );
@@ -66,6 +68,9 @@ const Products = () => {
           </div>
         </div>
       </div>
+
+      {/* footer */}
+      <p className="footer">CopyRight © 2021 eBeauty.</p>
     </>
   );
 };

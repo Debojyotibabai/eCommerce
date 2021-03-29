@@ -14,14 +14,15 @@ const ProductCard = (props) => {
   });
 
   return (
-    <div className="product__card" data-aos="zoom-in">
+    <div className="product__card" data-aos="fade-up">
       <img src={props.img} alt="" />
       <div>
-        <p>{props.type}</p>
-        <h3>{props.name}</h3>
-        <h1>₹ {Math.round(Number(props.price) * 72.64)}</h1>
+        <h1>{props.type}</h1>
+        <h2>{props.name}</h2>
+        <h3>{props.description}</h3>
+        <h4>₹ {Math.round(Number(props.price) * 72.64)}</h4>
+        <button>Add To Cart</button>
       </div>
-      <button>Add To Cart</button>
     </div>
   );
 };
