@@ -29,7 +29,7 @@ const Navbar = () => {
         <li>
           <NavLink
             exact
-            to="/cosmetics"
+            to="/products"
             className="navlink"
             activeClassName="active__navlink"
           >

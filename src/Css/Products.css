@@ -1,18 +1,18 @@
-/* cosmetics banner */
-.cosmetics__banner {
+/* products banner */
+.products__banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80vh;
 }
-.cosmetics__banner > h1 {
+.products__banner > h1 {
   font-size: 4.8rem;
   font-family: "Frank Ruhl Libre", serif;
   width: 45%;
   border-right: 4px solid #bbbbbb;
   padding-right: 50px;
 }
-.cosmetics__banner > p {
+.products__banner > p {
   font-size: 1.7rem;
   width: 47%;
   line-height: 1.7;

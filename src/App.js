@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 // component
 import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
-import Cosmetics from "./Component/Cosmetics";
+import Products from "./Component/Products";
 import Contact from "./Component/Contact";
 
 // css
@@ -19,7 +19,7 @@ const App = () => {
       {/* paths */}
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/cosmetics" component={Cosmetics} />
+        <Route exact path="/products" component={Products} />
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>

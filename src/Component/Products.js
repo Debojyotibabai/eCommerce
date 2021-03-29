@@ -5,9 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // css
-import "../Css/Cosmetics.css";
+import "../Css/Products.css";
 
-const Cosmetics = () => {
+const Products = () => {
   // aos init
   AOS.init({
     duration: 1000,
@@ -17,8 +17,8 @@ const Cosmetics = () => {
     <>
       {/* main section */}
       <div className="main__section">
-        {/* cosmetic selection banner */}
-        <div className="cosmetics__banner">
+        {/* products banner */}
+        <div className="products__banner">
           <h1>Welcome To Our Cosmetics Section</h1>
           <p data-aos="fade-right">
             The most beautiful makeup of a woman is passion. But cosmetics are
@@ -32,4 +32,4 @@ const Cosmetics = () => {
   );
 };
 
-export default Cosmetics;
+export default Products;

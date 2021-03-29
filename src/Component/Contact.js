@@ -41,7 +41,7 @@ const Contact = () => {
       inputValue.email !== "" &&
       inputValue.message !== ""
     ) {
-      alert("The message is sent to us. Thank you for contacting");
+      alert("The message is sent to us. Thank you for contacting.");
       setInputValue({
         fName: "",
         lName: "",
@@ -49,7 +49,7 @@ const Contact = () => {
         message: "",
       });
     } else {
-      alert("Please fill the form properly");
+      alert("Please fill the form properly.");
     }
   };
 
