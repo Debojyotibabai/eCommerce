@@ -1,18 +1,18 @@
-/* products banner */
-.products__banner {
+/* product banner */
+.product__banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 65vh;
 }
-.products__banner > h1 {
+.product__banner > h1 {
   font-size: 4rem;
   font-family: "Frank Ruhl Libre", serif;
   width: 45%;
   border-right: 4px solid #bbbbbb;
   padding-right: 50px;
 }
-.products__banner > p {
+.product__banner > p {
   font-size: 1.5rem;
   width: 47%;
   line-height: 1.7;
@@ -29,4 +29,5 @@
   padding: 15px 0;
   border: 2px solid;
   text-align: center;
+  margin-bottom: 30px;
 }

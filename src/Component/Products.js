@@ -36,8 +36,8 @@ const Products = () => {
     <>
       {/* main section */}
       <div className="main__section">
-        {/* products banner */}
-        <div className="products__banner">
+        {/* product banner */}
+        <div className="product__banner">
           <h1>Welcome To Our Cosmetics Section</h1>
           <p data-aos="fade-right">
             The most beautiful makeup of a woman is passion. But cosmetics are
@@ -52,7 +52,7 @@ const Products = () => {
           <h1>Our Product Collection</h1>
 
           {/* product card section */}
-          <div className="product__crad__section">
+          <div className="product__card__section">
             {cosmeticsData.map((eachCosmeticsData) => {
               return (
                 <ProductCard
