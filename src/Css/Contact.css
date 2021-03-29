@@ -4,12 +4,12 @@
 }
 .contact__header > h1 {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 3.3rem;
-  margin-bottom: 15px;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
 }
 .contact__header > p {
   color: #666666;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* contact section */
@@ -26,11 +26,11 @@
 }
 .contact__section > .left__contact__section > h1 {
   font-weight: normal;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 .contact__section > .left__contact__section > p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #666666;
   margin-bottom: 70px;
 }
@@ -50,7 +50,7 @@
   outline: none;
   padding: 15px;
   margin: 15px 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   border-bottom: 1px solid;
 }
@@ -60,6 +60,7 @@
 .contact__section > .right__contact__section > input::placeholder,
 .contact__section > .right__contact__section > textarea::placeholder {
   font-family: "Frank Ruhl Libre", serif;
+  font-size: 1rem;
 }
 .contact__section > .right__contact__section > button {
   border: none;

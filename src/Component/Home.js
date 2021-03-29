@@ -12,7 +12,7 @@ import axios from "axios";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 // component
-import ProductCard from "./ProductCard";
+import HomeProductCard from "./HomeProductCard";
 import NewsCard from "./NewsCard";
 
 // css
@@ -25,8 +25,8 @@ const Home = () => {
     duration: 1000,
   });
 
-  // product section data
-  const [productData] = useState([
+  // home product section data
+  const [homeProductData] = useState([
     {
       img:
         "https://rubysorganics.in/wp-content/uploads/2020/04/Rani-Lipstick-Website-Primary-Image-600x600.jpg",
@@ -45,7 +45,7 @@ const Home = () => {
     {
       img:
         "https://images-na.ssl-images-amazon.com/images/I/71fG8Ny92FL._SL1500_.jpg",
-      heading: "Eye Liner",
+      heading: "Eyeliner",
     },
   ]);
 
@@ -99,17 +99,17 @@ const Home = () => {
           </div>
         </div>
 
-        {/* product section */}
-        <div className="product">
+        {/* home product section */}
+        <div className="home__product">
           <h1>Our Products</h1>
           <p>
             You can buy this type of products from our website. Feel free to
             explore.
           </p>
           <div>
-            {productData.map((eachProduct, eachProductIndex) => {
+            {homeProductData.map((eachProduct, eachProductIndex) => {
               return (
-                <ProductCard
+                <HomeProductCard
                   key={eachProductIndex}
                   img={eachProduct.img}
                   heading={eachProduct.heading}

@@ -46,20 +46,20 @@
   background-color: #000;
 }
 
-/* product section */
-.product {
+/* home product section */
+.home__product {
   margin-top: 50px;
 }
-.product > h1 {
+.home__product > h1 {
   font-weight: bold;
   font-size: 2.7rem;
   font-family: "Frank Ruhl Libre", serif;
 }
-.product > p {
+.home__product > p {
   color: #666666;
   margin: 20px 0 80px;
 }
-.product > div {
+.home__product > div {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
