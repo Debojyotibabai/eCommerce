@@ -6,6 +6,7 @@ import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
 import Products from "./Component/Products";
 import Contact from "./Component/Contact";
+import Cart from "./Component/Cart";
 
 // css
 import "./Css/App.css";
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/products" component={Products} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/cart" component={Cart} />
         <Redirect to="/" />
       </Switch>
     </>

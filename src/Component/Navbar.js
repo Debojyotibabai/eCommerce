@@ -49,7 +49,7 @@ const Navbar = () => {
       </ul>
 
       {/* cart */}
-      <NavLink to="" className="cart">
+      <NavLink to="/cart" className="cart">
         CART
       </NavLink>
     </div>

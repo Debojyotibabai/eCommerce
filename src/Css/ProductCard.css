@@ -25,20 +25,21 @@
   line-height: 1.6;
 }
 .product__card > div > h4 {
-  font-size: 1.8rem;
-  margin: 30px 0;
+  font-size: 1.6rem;
+  margin: 40px 0 60px;
 }
-.product__card > div > button {
-  padding: 12px;
-  width: 300px;
+.product__card > div > .product__card__button {
+  padding: 13px 50px;
   background-color: #fff;
   outline: none;
   border: 2px solid;
   cursor: pointer;
   transition: 0.3s;
   font-size: 1rem;
+  color: #000;
+  text-decoration: none;
 }
-.product__card > div > button:hover {
+.product__card > div > .product__card__button:hover {
   background-color: #000;
   color: #fff;
 }
