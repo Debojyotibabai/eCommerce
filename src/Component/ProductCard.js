@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 // aos
 import AOS from "aos";
@@ -22,9 +21,7 @@ const ProductCard = (props) => {
         <h2>{props.name}</h2>
         <h3>{props.description}</h3>
         <h4>₹ {Math.round(Number(props.price) * 75)}</h4>
-        <NavLink className="product__card__button" to="">
-          Add To Cart
-        </NavLink>
+        <button className="product__card__button">Add To Cart</button>
       </div>
     </div>
   );

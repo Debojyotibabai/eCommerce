@@ -53,7 +53,7 @@ const Products = () => {
 
           {/* product card section */}
           <div className="product__card__section">
-            {cosmeticsData.map((eachCosmeticsData) => {
+            {cosmeticsData.map((eachCosmeticsData, eachCosmeticsIndex) => {
               return (
                 <ProductCard
                   key={eachCosmeticsData.id}
