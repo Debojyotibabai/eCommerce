@@ -1,5 +1,10 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 // component
 import Navbar from "./Component/Navbar";
@@ -13,7 +18,7 @@ import "./Css/App.css";
 
 const App = () => {
   return (
-    <>
+    <Router>
       {/* navbar */}
       <Navbar />
 
@@ -25,7 +30,7 @@ const App = () => {
         <Route exact path="/cart" component={Cart} />
         <Redirect to="/" />
       </Switch>
-    </>
+    </Router>
   );
 };
 
