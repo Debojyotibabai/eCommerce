@@ -55,7 +55,7 @@
   border-bottom: 1px solid;
 }
 .contact__section > .right__contact__section > textarea {
-  resize: none;
+  resize: vertical;
 }
 .contact__section > .right__contact__section > input::placeholder,
 .contact__section > .right__contact__section > textarea::placeholder {
