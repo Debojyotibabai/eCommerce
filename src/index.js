@@ -4,4 +4,12 @@ import ReactDOM from "react-dom";
 // component
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// context
+import { CartProvider } from "./CartContext";
+
+ReactDOM.render(
+  <CartProvider>
+    <App />
+  </CartProvider>,
+  document.getElementById("root")
+);
