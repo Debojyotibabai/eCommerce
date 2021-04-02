@@ -93,7 +93,7 @@ const Home = () => {
               lovingly gives the passion that she shows. The beauty of a woman
               grows with the passing years.
             </p>
-            <NavLink className="banner__button" to="/cosmetics">
+            <NavLink className="banner__button" to="/products">
               SHOP NOW
             </NavLink>
           </div>

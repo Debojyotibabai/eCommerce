@@ -53,7 +53,7 @@ const Products = () => {
 
           {/* product card section */}
           <div className="product__card__section">
-            {cosmeticsData.map((eachCosmeticsData, eachCosmeticsIndex) => {
+            {cosmeticsData.map((eachCosmeticsData) => {
               return (
                 <ProductCard
                   key={eachCosmeticsData.id}
@@ -61,7 +61,7 @@ const Products = () => {
                   type={eachCosmeticsData.product_type}
                   name={eachCosmeticsData.name}
                   description={eachCosmeticsData.description}
-                  price={eachCosmeticsData.price}
+                  price={Number(eachCosmeticsData.price)}
                 />
               );
             })}

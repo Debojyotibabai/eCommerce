@@ -1,0 +1,36 @@
+.cart__card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 35px 0;
+}
+.cart__card > img {
+  width: 5%;
+}
+.cart__card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 80px;
+}
+.cart__card > div > h1 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  width: 15%;
+}
+.cart__card > div > h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.cart__card > div > button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #888888;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.cart__card > div > button:hover {
+  color: #000;
+}
