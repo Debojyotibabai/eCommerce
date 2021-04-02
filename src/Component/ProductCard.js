@@ -36,7 +36,7 @@ const ProductCard = (props) => {
         <h1>{props.type}</h1>
         <h2>{props.name}</h2>
         <h3>{props.description}</h3>
-        <h4>₹ {Math.round(props.price * 75)}</h4>
+        <h4>₹ {props.price}</h4>
         <button onClick={addToCart} className="product__card__button">
           Add To Cart
         </button>

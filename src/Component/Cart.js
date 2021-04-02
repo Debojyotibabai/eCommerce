@@ -73,11 +73,7 @@ const Cart = () => {
                 available.
               </h1>
               <h2>
-                Subtotal: ₹{" "}
-                {cart.reduce(
-                  (acc, curr) => Math.round(acc + curr.price * 75),
-                  0
-                )}
+                Subtotal: ₹ {cart.reduce((acc, curr) => acc + curr.price, 0)}
               </h2>
               <button
                 onClick={() => {
