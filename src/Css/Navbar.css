@@ -114,3 +114,26 @@
     left: 0;
   }
 }
+
+/* screen size 480px */
+@media only screen and (max-width: 480px) {
+  /* navbar */
+  .navbar {
+    padding: 6%;
+  }
+
+  /* logo */
+  .navbar > .logo {
+    font-size: 1.9rem;
+  }
+
+  /* nav list */
+  .nav__list {
+    width: 65%;
+  }
+
+  /* menu*/
+  .navbar > .menu > .menu__item {
+    margin: 0 0 0 40px;
+  }
+}

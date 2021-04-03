@@ -60,3 +60,22 @@
     margin-left: 50px;
   }
 }
+
+/* screen size 480px */
+@media only screen and (max-width: 480px) {
+  .product__card {
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 0;
+  }
+  .product__card > div {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .product__card > div > h2 {
+    font-size: 1.6rem;
+  }
+  .product__card > div > h4 {
+    font-size: 1.4rem;
+  }
+}

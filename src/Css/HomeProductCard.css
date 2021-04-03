@@ -26,3 +26,11 @@
     width: 40%;
   }
 }
+
+/* screen size 480px */
+@media only screen and (max-width: 480px) {
+  .home__product__card {
+    width: 70%;
+    margin: 30px 0;
+  }
+}

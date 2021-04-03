@@ -96,3 +96,35 @@
     font-size: 2rem;
   }
 }
+
+/* screen size 480px */
+@media only screen and (max-width: 480px) {
+  .cart__header {
+    margin: 70px 0 90px;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  /* empty cart */
+  .empty__cart {
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .empty__cart > p {
+    font-size: 2rem;
+  }
+
+  /* cart items */
+  .cart__section > .cart__items {
+    border-bottom: none;
+    padding: 40px 0;
+  }
+
+  /* cart subtotal */
+  .cart__subtotal {
+    margin: 70px 0 80px;
+  }
+  .cart__subtotal > h2 {
+    margin: 30px 0 50px;
+  }
+}

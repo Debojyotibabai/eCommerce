@@ -35,3 +35,11 @@
     margin-bottom: 80px;
   }
 }
+
+/* screen size 480px */
+@media only screen and (max-width: 480px) {
+  .news__card {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+}
