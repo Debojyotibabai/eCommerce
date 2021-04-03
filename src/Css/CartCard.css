@@ -5,7 +5,7 @@
   padding: 35px 0;
 }
 .cart__card > img {
-  width: 5%;
+  width: 7%;
 }
 .cart__card > div {
   display: flex;
@@ -37,19 +37,6 @@
 
 /* screen size 1024px */
 @media only screen and (max-width: 1024px) {
-  .cart__card > img {
-    width: 7%;
-  }
-  .cart__card > div {
-    margin-left: 60px;
-  }
-  .cart__card > div > h1 {
-    width: 30%;
-  }
-}
-
-/* screen size 768px */
-@media only screen and (max-width: 768px) {
   .cart__card > img {
     width: 10%;
   }
