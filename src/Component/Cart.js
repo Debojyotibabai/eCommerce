@@ -67,7 +67,7 @@ const Cart = () => {
             </div>
 
             {/* cart subtotal */}
-            <div data-aos="fade-up" className="cart__subtotal">
+            <div className="cart__subtotal">
               <h1>
                 All orders are processed in INR at the most recent exchange rate
                 available.

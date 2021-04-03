@@ -228,9 +228,6 @@
   .news__letter > .right__news__letter {
     width: 60%;
   }
-  .news__letter > .right__news__letter > form {
-    width: 100%;
-  }
 }
 
 /* screen size 768px */
@@ -308,5 +305,8 @@
   }
   .news__letter > .right__news__letter > h1 {
     font-size: 1.7rem;
+  }
+  .news__letter > .right__news__letter > form {
+    width: 100%;
   }
 }
