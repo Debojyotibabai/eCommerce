@@ -59,7 +59,7 @@ const Products = () => {
                   type={eachCosmeticsData.product_type}
                   name={eachCosmeticsData.name}
                   description={eachCosmeticsData.description}
-                  price={Number(eachCosmeticsData.price)}
+                  price={Math.round(Number(eachCosmeticsData.price) * 75)}
                 />
               );
             })}
