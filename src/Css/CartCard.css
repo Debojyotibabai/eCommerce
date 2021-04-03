@@ -15,9 +15,9 @@
   margin-left: 80px;
 }
 .cart__card > div > h1 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: normal;
-  width: 15%;
+  width: 20%;
 }
 .cart__card > div > h2 {
   font-size: 1.2rem;
@@ -33,4 +33,30 @@
 }
 .cart__card > div > button:hover {
   color: #000;
+}
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  .cart__card > img {
+    width: 7%;
+  }
+  .cart__card > div {
+    margin-left: 60px;
+  }
+  .cart__card > div > h1 {
+    width: 30%;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  .cart__card > img {
+    width: 10%;
+  }
+  .cart__card > div {
+    margin-left: 50px;
+  }
+  .cart__card > div > h1 {
+    width: 35%;
+  }
 }

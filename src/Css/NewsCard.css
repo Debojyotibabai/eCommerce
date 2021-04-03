@@ -20,3 +20,18 @@
   font-size: 1.3rem;
   color: #000;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  .news__card {
+    width: 27%;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  .news__card {
+    width: 50%;
+    margin-bottom: 80px;
+  }
+}

@@ -159,3 +159,154 @@
   background: none;
   cursor: pointer;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  /* home banner section */
+  .home__banner {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  /* left banner */
+  .home__banner > .left__banner {
+    width: 55%;
+  }
+  .home__banner > .left__banner > p {
+    font-size: 3.5rem;
+  }
+
+  /* right banner */
+  .home__banner > .right__banner {
+    width: 35%;
+  }
+
+  /* home product section */
+  .home__product {
+    margin-top: 140px;
+  }
+  .home__product > p {
+    margin: 20px 0 60px;
+  }
+  .home__product > div {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  /* thoughts section */
+  .thoughts {
+    width: 80%;
+    margin-top: 200px;
+  }
+
+  /* news section */
+  .news {
+    padding: 50px 30px;
+  }
+  .news > h1 {
+    font-size: 2.5rem;
+  }
+
+  /* news letter section */
+  .news__letter {
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+
+  /* left news letter */
+  .news__letter > .left__news__letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .news__letter > .left__news__letter > a {
+    margin: 40px 0;
+  }
+
+  /* right news letter */
+  .news__letter > .right__news__letter {
+    width: 60%;
+  }
+  .news__letter > .right__news__letter > form {
+    width: 100%;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  /* home banner section */
+  .home__banner {
+    flex-direction: column;
+  }
+
+  /* left banner */
+  .home__banner > .left__banner {
+    width: 90%;
+  }
+  .home__banner > .left__banner > p {
+    margin-bottom: 40px;
+  }
+
+  /* right banner */
+  .home__banner > .right__banner {
+    width: 90%;
+  }
+  .home__banner > .right__banner > img {
+    display: none;
+  }
+  .home__banner > .right__banner > p {
+    margin: 60px 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  /* home product section */
+  .home__product > h1 {
+    font-size: 2.3rem;
+  }
+  .home__product > div {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  /* thoughts section */
+  .thoughts {
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  /* news section */
+  .news > div {
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+
+  /* news letter section */
+  .news__letter {
+    justify-content: space-between;
+    margin-top: 150px;
+    padding: 60px 0;
+  }
+
+  /* left news letter */
+  .news__letter > .left__news__letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .news__letter > .left__news__letter > a {
+    margin: 40px 0;
+  }
+
+  /* right news letter */
+  .news__letter > .right__news__letter {
+    width: 70%;
+  }
+  .news__letter > .right__news__letter > h1 {
+    font-size: 1.7rem;
+  }
+}

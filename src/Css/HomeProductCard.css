@@ -11,3 +11,18 @@
   font-size: 1.5rem;
   margin-top: 30px;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  .home__product__card {
+    width: 30%;
+    margin: 50px 20px;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  .home__product__card {
+    width: 35%;
+  }
+}

@@ -43,3 +43,20 @@
   background-color: #000;
   color: #fff;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  .product__card > div > h2 {
+    font-size: 1.8rem;
+  }
+  .product__card > div > h3 {
+    width: 100%;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  .product__card > div {
+    margin-left: 50px;
+  }
+}

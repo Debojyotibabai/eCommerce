@@ -41,9 +41,7 @@ const Products = () => {
           <h1>Welcome To Our Cosmetics Section</h1>
           <p data-aos="fade-right">
             The most beautiful makeup of a woman is passion. But cosmetics are
-            easier to buy.
-            <br />
-            Explore our latest collections.
+            easier to buy. Explore our latest collections.
           </p>
         </div>
 

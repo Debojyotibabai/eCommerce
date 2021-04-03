@@ -27,3 +27,11 @@ font-family: 'Roboto', sans-serif; */
   font-size: 0.9rem;
   word-spacing: 3px;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  /* main section */
+  .main__section {
+    padding: 5%;
+  }
+}

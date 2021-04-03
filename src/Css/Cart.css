@@ -71,3 +71,28 @@
   background-color: #000;
   color: #fff;
 }
+
+/* screen size 1024px */
+@media only screen and (max-width: 1024px) {
+  .cart__header {
+    margin: 50px 0 90px;
+  }
+
+  /* empty cart */
+  .empty__cart {
+    transform: translate(-50%);
+  }
+
+  /* cart subtotal */
+  .cart__subtotal {
+    margin: 100px 0;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (max-width: 768px) {
+  .cart__header {
+    margin: 40px 0 80px;
+    font-size: 2rem;
+  }
+}
