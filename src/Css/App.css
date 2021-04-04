@@ -14,9 +14,9 @@ font-family: 'Roboto', sans-serif; */
 
 /* main section */
 .main__section {
-  max-width: 1500px;
   width: 100%;
   margin: auto;
+  padding: 0 5%;
 }
 
 /* footer */
@@ -32,14 +32,8 @@ font-family: 'Roboto', sans-serif; */
 @media only screen and (min-width: 1200px) {
   /* main section */
   .main__section {
-    padding: 0 5%;
-  }
-}
-
-/* screen size 1024px */
-@media only screen and (max-width: 1024px) {
-  /* main section */
-  .main__section {
-    padding: 5%;
+    width: 100%;
+    margin: auto;
+    padding: 0 10%;
   }
 }

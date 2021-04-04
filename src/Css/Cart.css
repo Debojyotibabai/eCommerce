@@ -75,7 +75,7 @@
 /* screen size 1024px */
 @media only screen and (max-width: 1024px) {
   .cart__header {
-    margin: 50px 0 90px;
+    margin: 80px 0 90px;
   }
 
   /* empty cart */
@@ -92,7 +92,7 @@
 /* screen size 768px */
 @media only screen and (max-width: 768px) {
   .cart__header {
-    margin: 50px 0 80px;
+    margin: 70px 0 80px;
     font-size: 2rem;
   }
 }
@@ -100,7 +100,7 @@
 /* screen size 480px */
 @media only screen and (max-width: 480px) {
   .cart__header {
-    margin: 70px 0 90px;
+    margin: 80px 0 90px;
     font-size: 2.2rem;
     text-align: center;
   }
