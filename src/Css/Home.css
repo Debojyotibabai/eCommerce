@@ -441,6 +441,7 @@
 
   /* left news letter */
   .news__letter > .left__news__letter > a {
-    margin: 0 20px;
+    margin: 0 15px;
+    font-size: 1rem;
   }
 }
