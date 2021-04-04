@@ -42,6 +42,9 @@
     width: 80%;
     margin-bottom: 60px;
   }
+  .news__card > img {
+    filter: grayscale(0);
+  }
 }
 
 /* screen size 360px */

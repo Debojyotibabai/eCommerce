@@ -321,6 +321,9 @@
     margin-bottom: 40px;
     font-size: 2.8rem;
   }
+  .home__banner > .left__banner > img {
+    filter: grayscale(0);
+  }
 
   /* right banner */
   .home__banner > .right__banner {
