@@ -122,3 +122,15 @@
     margin: 30px 0 50px;
   }
 }
+
+/* screen size 360px */
+@media only screen and (max-width: 360px) {
+  .cart__header {
+    font-size: 2rem;
+  }
+
+  /* cart subtotal */
+  .cart__subtotal {
+    text-align: center;
+  }
+}

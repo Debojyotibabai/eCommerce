@@ -80,3 +80,20 @@
     font-weight: bold;
   }
 }
+
+/* screen size 360px */
+@media only screen and (max-width: 360px) {
+  .cart__card > img {
+    width: 20%;
+  }
+  .cart__card > div {
+    margin-left: 40px;
+  }
+  .cart__card > div > h1 {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+  .cart__card > div > h2 {
+    font-size: 1.1rem;
+  }
+}

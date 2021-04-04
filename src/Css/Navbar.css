@@ -137,3 +137,26 @@
     margin: 0 0 0 40px;
   }
 }
+
+/* screen size 360px */
+@media only screen and (max-width: 360px) {
+  /* navbar */
+  .navbar {
+    padding: 7%;
+  }
+
+  /* logo */
+  .navbar > .logo {
+    font-size: 1.7rem;
+  }
+
+  /* nav list */
+  .nav__list {
+    width: 75%;
+  }
+
+  /* menu*/
+  .navbar > .menu > .menu__item {
+    margin: 0 0 0 30px;
+  }
+}

@@ -153,3 +153,27 @@
     width: 90%;
   }
 }
+
+/* screen size 360px */
+@media only screen and (max-width: 360px) {
+  /* contact header */
+  .contact__header {
+    margin: 50px 0 90px;
+  }
+  .contact__header > h1 {
+    font-size: 2.2rem;
+  }
+
+  /* left contact section */
+  .contact__section > .left__contact__section {
+    width: 95%;
+  }
+  .contact__section > .left__contact__section > h1 {
+    font-size: 1.7rem;
+  }
+
+  /* right contact section */
+  .contact__section > .right__contact__section {
+    width: 95%;
+  }
+}

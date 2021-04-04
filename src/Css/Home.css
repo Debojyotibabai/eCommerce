@@ -392,3 +392,52 @@
     width: 100%;
   }
 }
+
+/* screen size 360px */
+@media only screen and (max-width: 360px) {
+  /* home banner section */
+  .home__banner {
+    margin-top: 50px;
+  }
+
+  /* left banner */
+  .home__banner > .left__banner > p {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+  }
+
+  /* right banner */
+  .home__banner > .right__banner > p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* home product section */
+  .home__product {
+    margin-top: 120px;
+  }
+
+  /* thoughts section */
+  .thoughts {
+    margin-top: 100px;
+    font-size: 1.1rem;
+  }
+
+  /* news section */
+  .news {
+    margin-top: 100px;
+  }
+  .news > h1 {
+    font-size: 2rem;
+  }
+
+  /* news letter section */
+  .news__letter {
+    margin-top: 120px;
+  }
+
+  /* left news letter */
+  .news__letter > .left__news__letter > a {
+    margin: 0 20px;
+  }
+}
