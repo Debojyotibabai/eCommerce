@@ -2,13 +2,13 @@
 .home__banner {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 7% 0;
 }
 
 /* left banner */
 .home__banner > .left__banner {
-  width: 55%;
+  width: 50%;
 }
 .home__banner > .left__banner > img {
   width: 100%;
@@ -17,7 +17,7 @@
 .home__banner > .left__banner > p {
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-bottom: 30px;
 }
 
