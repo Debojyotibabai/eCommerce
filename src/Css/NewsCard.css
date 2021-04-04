@@ -39,7 +39,7 @@
 /* screen size 480px */
 @media only screen and (max-width: 480px) {
   .news__card {
-    width: 80%;
+    width: 85%;
     margin-bottom: 60px;
   }
   .news__card > img {
