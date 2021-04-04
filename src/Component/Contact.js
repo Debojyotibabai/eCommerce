@@ -66,7 +66,7 @@ const Contact = () => {
         {/* contact__section */}
         <div className="contact__section">
           {/* left contact section */}
-          <div className="left__contact__section" data-aos="fade-right">
+          <div className="left__contact__section">
             <h1>Customers</h1>
             <p>
               For recommendations, comments or enquiry, feel free to contact us
@@ -82,7 +82,7 @@ const Contact = () => {
           {/* right contact section */}
           <form
             className="right__contact__section"
-            data-aos="fade-left"
+            data-aos="fade-right"
             onSubmit={submitForm}
           >
             <input

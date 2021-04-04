@@ -36,7 +36,3 @@ font-family: 'Roboto', sans-serif; */
     padding: 0 10%;
   }
 }
-
-/* screen size 360px */
-@media only screen and (max-width: 360px) {
-}

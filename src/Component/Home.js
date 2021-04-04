@@ -73,7 +73,7 @@ const Home = () => {
         {/* home banner section */}
         <div className="home__banner">
           {/* left banner */}
-          <div className="left__banner" data-aos="fade-right">
+          <div className="left__banner">
             <p>A Cosmetic Heaven</p>
             <img
               src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvc21ldGljfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -82,7 +82,7 @@ const Home = () => {
           </div>
 
           {/* right banner */}
-          <div className="right__banner" data-aos="fade-left">
+          <div className="right__banner" data-aos="fade-right">
             <img
               src="https://images.unsplash.com/photo-1560129986-baba295cf72c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29zbWV0aWN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
               alt=""
