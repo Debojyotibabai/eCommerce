@@ -1,6 +1,6 @@
 /* contact header */
 .contact__header {
-  margin: 100px 0 80px;
+  margin: 80px 0;
 }
 .contact__header > h1 {
   font-family: "Frank Ruhl Libre", serif;
@@ -79,7 +79,7 @@
 @media only screen and (max-width: 1024px) {
   /* contact header */
   .contact__header {
-    margin: 50px 0 100px;
+    margin: 60px 0 100px;
   }
   .contact__header > h1 {
     font-size: 3rem;

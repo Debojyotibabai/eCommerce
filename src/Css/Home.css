@@ -3,7 +3,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 5%;
+  padding: 7% 5%;
 }
 
 /* left banner */
@@ -144,7 +144,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
-  width: 90%;
+  width: 100%;
 }
 .news__letter > .right__news__letter > form > input {
   border: none;

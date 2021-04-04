@@ -38,7 +38,7 @@
 /* screen size 1024px */
 @media only screen and (max-width: 1024px) {
   .cart__card > img {
-    width: 8%;
+    width: 7%;
   }
   .cart__card > div {
     margin-left: 50px;

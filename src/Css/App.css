@@ -15,7 +15,6 @@ font-family: 'Roboto', sans-serif; */
 /* main section */
 .main__section {
   width: 100%;
-  margin: auto;
   padding: 0 5%;
 }
 
@@ -34,6 +33,6 @@ font-family: 'Roboto', sans-serif; */
   .main__section {
     width: 100%;
     margin: auto;
-    padding: 0 10%;
+    padding: 0 8%;
   }
 }
