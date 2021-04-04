@@ -11,6 +11,7 @@ const NewsCard = (props) => {
   // aos init
   AOS.init({
     duration: 1000,
+    disable: "mobile",
   });
 
   return (

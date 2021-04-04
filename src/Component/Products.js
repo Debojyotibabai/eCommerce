@@ -18,6 +18,7 @@ const Products = () => {
   // aos init
   AOS.init({
     duration: 1000,
+    disable: "mobile",
   });
 
   // cosmetics data

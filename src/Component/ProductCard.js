@@ -14,6 +14,7 @@ const ProductCard = (props) => {
   // aos init
   AOS.init({
     duration: 1000,
+    disable: "mobile",
   });
 
   // context cart items
