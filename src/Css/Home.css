@@ -132,7 +132,7 @@
 
 /* right news letter */
 .news__letter > .right__news__letter {
-  width: 40%;
+  width: 50%;
 }
 .news__letter > .right__news__letter > h1 {
   font-family: "Frank Ruhl Libre", serif;
