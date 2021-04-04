@@ -9,6 +9,7 @@
 /* left banner */
 .home__banner > .left__banner {
   width: 50%;
+  z-index: 1;
 }
 .home__banner > .left__banner > img {
   width: 100%;
@@ -70,7 +71,7 @@
   text-align: center;
   width: 60%;
   margin: auto;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
   margin-top: 220px;
@@ -166,6 +167,7 @@
   .home__banner {
     padding: 0;
     margin-top: 80px;
+    justify-content: space-between;
   }
 
   /* left banner */
@@ -197,6 +199,7 @@
   .thoughts {
     width: 80%;
     margin-top: 180px;
+    font-size: 1.4rem;
   }
 
   /* news section */
@@ -227,6 +230,9 @@
   /* right news letter */
   .news__letter > .right__news__letter {
     width: 60%;
+  }
+  .news__letter > .right__news__letter > form {
+    width: 90%;
   }
 }
 
@@ -271,6 +277,7 @@
   .thoughts {
     width: 90%;
     margin-top: 150px;
+    font-size: 1.3rem;
   }
 
   /* news section */
