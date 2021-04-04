@@ -28,11 +28,11 @@ font-family: 'Roboto', sans-serif; */
 }
 
 /* screen size 1200px */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   /* main section */
   .main__section {
     width: 100%;
     margin: auto;
-    padding: 0 8%;
+    padding: 0 10%;
   }
 }
