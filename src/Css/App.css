@@ -28,6 +28,14 @@ font-family: 'Roboto', sans-serif; */
   word-spacing: 3px;
 }
 
+/* screen size 1200px */
+@media only screen and (min-width: 1200px) {
+  /* main section */
+  .main__section {
+    padding: 0 5%;
+  }
+}
+
 /* screen size 1024px */
 @media only screen and (max-width: 1024px) {
   /* main section */
