@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+// cosmetics data import
+import cosmeticsData from "./cosmeticsData";
 
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// axios
-import axios from "axios";
 
 // component
 import ProductCard from "./ProductCard";
@@ -19,18 +19,6 @@ const Products = () => {
   AOS.init({
     duration: 1000,
   });
-
-  // cosmetics data
-  const [cosmeticsData, setCosmeticsData] = useState([]);
-
-  // fetch and set cosmetics data
-  useEffect(() => {
-    axios
-      .get("http://makeup-api.herokuapp.com/api/v1/products.json?brand=l'oreal")
-      .then((response) => {
-        setCosmeticsData(response.data);
-      });
-  }, []);
 
   return (
     <>
@@ -51,15 +39,15 @@ const Products = () => {
 
           {/* product card section */}
           <div className="product__card__section">
-            {cosmeticsData.map((eachCosmeticsData) => {
+            {cosmeticsData.map((eachCosmeticsData, eachCosmeticsIndex) => {
               return (
                 <ProductCard
-                  key={eachCosmeticsData.id}
-                  img={eachCosmeticsData.image_link}
-                  type={eachCosmeticsData.product_type}
+                  key={eachCosmeticsIndex}
+                  img={eachCosmeticsData.img}
+                  type={eachCosmeticsData.type}
                   name={eachCosmeticsData.name}
                   description={eachCosmeticsData.description}
-                  price={Math.round(Number(eachCosmeticsData.price) * 75)}
+                  price={Number(eachCosmeticsData.price)}
                 />
               );
             })}

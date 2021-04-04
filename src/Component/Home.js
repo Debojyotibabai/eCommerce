@@ -103,8 +103,8 @@ const Home = () => {
         <div className="home__product">
           <h1>Our Main Products</h1>
           <p>
-            You can buy this type of products and other stuffs from our website.
-            Feel free to explore.
+            You can buy this type of products from our website. Feel free to
+            explore.
           </p>
           <div>
             {homeProductData.map((eachProduct, eachProductIndex) => {
