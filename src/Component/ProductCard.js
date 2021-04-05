@@ -21,12 +21,22 @@ const ProductCard = (props) => {
 
   // add to cart functionality
   const addToCart = () => {
-    setCart(() => {
-      return [
-        ...cart,
-        { img: props.img, name: props.name, price: props.price },
-      ];
+    // check if the items is already in cart or not
+    const isAlreadyInCart = cart.some((eachCartItem) => {
+      return eachCartItem.name === props.name;
     });
+
+    // add the items in cart
+    if (isAlreadyInCart) {
+      alert("You Added this item in cart");
+    } else {
+      setCart(() => {
+        return [
+          ...cart,
+          { img: props.img, name: props.name, price: props.price },
+        ];
+      });
+    }
   };
 
   return (
