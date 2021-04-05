@@ -171,7 +171,7 @@ const Home = () => {
                 e.preventDefault();
                 inputValue !== ""
                   ? alert("Subscribed successfully")
-                  : alert("Please enter your email address");
+                  : alert("Please enter your email address.");
                 setInputValue("");
               }}
             >

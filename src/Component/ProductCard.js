@@ -28,7 +28,7 @@ const ProductCard = (props) => {
 
     // add the items in cart
     if (isAlreadyInCart) {
-      alert("You Added this item in cart");
+      alert("You already Added this item into the cart.");
     } else {
       setCart(() => {
         return [
