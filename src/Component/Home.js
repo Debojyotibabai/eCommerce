@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// tawkTo
-import tawkTo from "tawkto-react";
-
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -64,18 +61,6 @@ const Home = () => {
 
   // news letter input value
   const [inputValue, setInputValue] = useState("");
-
-  // tawkTo
-  const tawkToPropertyId = "60dcb5b865b7290ac638c276";
-
-  // Direct Chat Link
-  // https://tawk.to/chat/tawkToPropertyId/tawkToKey
-
-  const tawkToKey = "ba55c542031c5e8efa939db7dd0d3971fb2f8696";
-
-  useEffect(() => {
-    tawkTo(tawkToPropertyId, tawkToKey);
-  }, []);
 
   return (
     <>
