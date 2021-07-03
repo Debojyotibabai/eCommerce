@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
+// tawkTo
+import tawkTo from "tawkto-react";
+
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,23 +31,19 @@ const Home = () => {
   // home product section data
   const [homeProductData] = useState([
     {
-      img:
-        "https://rubysorganics.in/wp-content/uploads/2020/04/Rani-Lipstick-Website-Primary-Image-600x600.jpg",
+      img: "https://rubysorganics.in/wp-content/uploads/2020/04/Rani-Lipstick-Website-Primary-Image-600x600.jpg",
       heading: "Lipstick",
     },
     {
-      img:
-        "https://media.glamour.com/photos/5e499ef0ddc6df0008d748e2/master/w_1600%2Cc_limit/cote-nail-polish.jpg",
+      img: "https://media.glamour.com/photos/5e499ef0ddc6df0008d748e2/master/w_1600%2Cc_limit/cote-nail-polish.jpg",
       heading: "Nail Polish",
     },
     {
-      img:
-        "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Coral_Blush_400x.jpg?v=1603201305",
+      img: "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Coral_Blush_400x.jpg?v=1603201305",
       heading: "Blush",
     },
     {
-      img:
-        "https://images-na.ssl-images-amazon.com/images/I/71fG8Ny92FL._SL1500_.jpg",
+      img: "https://images-na.ssl-images-amazon.com/images/I/71fG8Ny92FL._SL1500_.jpg",
       heading: "Eyeliner",
     },
   ]);
@@ -65,6 +64,18 @@ const Home = () => {
 
   // news letter input value
   const [inputValue, setInputValue] = useState("");
+
+  // tawkTo
+  const tawkToPropertyId = "60dcb5b865b7290ac638c276";
+
+  // Direct Chat Link
+  // https://tawk.to/chat/tawkToPropertyId/tawkToKey
+
+  const tawkToKey = "ba55c542031c5e8efa939db7dd0d3971fb2f8696";
+
+  useEffect(() => {
+    tawkTo(tawkToPropertyId, tawkToKey);
+  }, []);
 
   return (
     <>
