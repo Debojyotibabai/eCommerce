@@ -1,12 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// context
-import { CartContext } from "../CartContext";
 
 // component
 import CartCard from "./CartCard";
@@ -14,24 +11,34 @@ import CartCard from "./CartCard";
 // css
 import "../Css/Cart.css";
 
+// cart reducer
+import cartReducer from "../redux/cartReducer";
+
+// cart reducer action
+import { cartReducerActions } from "../redux/cartReducer";
+
+// redux
+import { useSelector, useDispatch } from "react-redux";
+
 const Cart = () => {
   // aos init
   AOS.init({
     duration: 1000,
   });
 
-  // context cart items
-  const [cart, setCart] = useContext(CartContext);
+  // dispatch
+  const dispatch = useDispatch();
+
+  // cart reducer value
+  const cartReducer = useSelector((state) => state.cartReducer);
 
   // delete cart items
   const deleteCartItem = (index) => {
-    const newCart = [...cart];
-    newCart.splice(index, 1);
-    setCart(newCart);
+    dispatch(cartReducerActions.removeCartItem({ index: index }));
   };
 
   // cart items making
-  const allCartItems = cart.map((eachItem, eachItemIndex) => {
+  const allCartItems = cartReducer.map((eachItem, eachItemIndex) => {
     return (
       <CartCard
         key={eachItemIndex}
@@ -50,7 +57,7 @@ const Cart = () => {
         <h1 className="cart__header">Shopping Cart</h1>
 
         {/* check if cart is empty or not */}
-        {cart.length === 0 ? (
+        {cartReducer.length === 0 ? (
           // empty cart
           <div className="empty__cart">
             <p>Your cart is empty</p>
@@ -73,7 +80,8 @@ const Cart = () => {
                 available.
               </h1>
               <h2>
-                Subtotal: ₹ {cart.reduce((acc, curr) => acc + curr.price, 0)}
+                Subtotal: ₹{" "}
+                {cartReducer.reduce((acc, cur) => acc + cur.price, 0)}
               </h2>
               <button
                 onClick={() => {

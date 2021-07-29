@@ -4,12 +4,15 @@ import ReactDOM from "react-dom";
 // component
 import App from "./App";
 
-// context
-import { CartProvider } from "./CartContext";
+// redux store
+import store from "./redux/store";
+
+// redux provider
+import { Provider } from "react-redux";
 
 ReactDOM.render(
-  <CartProvider>
+  <Provider store={store}>
     <App />
-  </CartProvider>,
+  </Provider>,
   document.getElementById("root")
 );

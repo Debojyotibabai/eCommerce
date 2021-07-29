@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 // aos
 import AOS from "aos";
@@ -7,8 +7,11 @@ import "aos/dist/aos.css";
 // css
 import "../Css/ProductCard.css";
 
-// context
-import { CartContext } from "../CartContext";
+// cart reducer actions
+import { cartReducerActions } from "../redux/cartReducer";
+
+// redux
+import { useSelector, useDispatch } from "react-redux";
 
 const ProductCard = (props) => {
   // aos init
@@ -16,26 +19,26 @@ const ProductCard = (props) => {
     duration: 1000,
   });
 
-  // context cart items
-  const [cart, setCart] = useContext(CartContext);
+  // cart reducer value
+  const cartReducer = useSelector((state) => state.cartReducer);
+
+  // dispatch
+  const dispatch = useDispatch();
 
   // add to cart functionality
   const addToCart = () => {
-    // check if the items is already in cart or not
-    const isAlreadyInCart = cart.some((eachCartItem) => {
-      return eachCartItem.name === props.name;
+    const isItemThere = cartReducer.some((eachItem) => {
+      return eachItem.name === props.name;
     });
 
-    // add the items in cart
-    if (isAlreadyInCart) {
-      alert("You already Added this item into the cart.");
+    if (isItemThere) {
+      alert("This item is already added to cart");
     } else {
-      setCart(() => {
-        return [
-          ...cart,
-          { img: props.img, name: props.name, price: props.price },
-        ];
-      });
+      dispatch(
+        cartReducerActions.addCartItem({
+          item: { img: props.img, name: props.name, price: props.price },
+        })
+      );
     }
   };
 
